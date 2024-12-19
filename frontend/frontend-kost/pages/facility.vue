@@ -6,6 +6,7 @@
     <FacilityLayout>
     </FacilityLayout>
   </div>
+  <KostFooter />
 </template>
   
 <script>

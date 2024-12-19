@@ -28,6 +28,7 @@
             </div>
         </div>
     </div>
+    <KostFooter />
 </template>
 
 <style scoped>
