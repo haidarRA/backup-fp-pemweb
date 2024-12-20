@@ -38,6 +38,7 @@
             this.fetchUsername();
         },
         methods: {
+            /*
             async fetchUsername() {
                 const loginToken = localStorage.getItem("loginToken");
                 if (loginToken) {
@@ -64,6 +65,9 @@
                 } else {
                     console.warn("No login token found in local storage.");
                 }
+            },*/
+            fetchUsername() {
+                this.username = localStorage.getItem("username");
             },
             toggleDropdown() {
                 this.showDropdown = !this.showDropdown;

@@ -1,19 +1,5 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
-    "module": "CommonJS",
-    "strict": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "typeRoots": ["./node_modules/@types", "./src/@types"],
-    "baseUrl": "./src"
-  }
-}
-
-/*
-{
-  "compilerOptions": {
     "module": "commonjs",
     "declaration": true,
     "removeComments": true,
@@ -38,4 +24,4 @@
     "resolveJsonModule": true,
     "isolatedModules": true
   }
-}*/
+}

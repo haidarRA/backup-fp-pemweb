@@ -1,22 +1,11 @@
 import mongoose from "mongoose";
 
-export enum Role {
+enum Role {
   USER = "USER",
   ADMIN = "ADMIN",
 }
 
-type TokenType = {
-  token: string;
-};
-
-export type UserType = {
-  username: string;
-  password: string;
-  role: Role;
-  tokens: TokenType[];
-};
-
-const UserSchema = new mongoose.Schema<UserType>(
+const UserSchema = new mongoose.Schema(
   {
     username: {
       type: String,
@@ -30,7 +19,6 @@ const UserSchema = new mongoose.Schema<UserType>(
       type: String,
       enum: Object.values(Role),
       required: true,
-      default: Role.USER,
     },
     tokens: [
       {
